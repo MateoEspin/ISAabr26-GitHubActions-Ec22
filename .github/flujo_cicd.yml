@@ -15,7 +15,7 @@ jobs:
       - name: Checkout the files
         uses: actions/checkout@v2
 
-              - name: Desplegar al servidor
+      - name: Desplegar al servidor
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
